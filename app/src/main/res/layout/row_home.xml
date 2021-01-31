@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_avtar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_person_24"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_avtar">
+    <TextView
+        android:id="@+id/tv_fn"
+        android:text="first_name"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="last_name"
+        android:layout_below="@id/tv_fn"
+        android:id="@+id/tv_ln"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="email"
+        android:id="@+id/tv_email"
+        android:layout_below="@id/tv_ln"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

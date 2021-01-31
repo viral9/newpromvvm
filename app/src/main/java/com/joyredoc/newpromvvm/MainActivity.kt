@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.joyredoc.newpromvvm.databinding.ActivityMainBinding
-import java.util.regex.Pattern
+import com.joyredoc.newpromvvm.tabactivity.TabActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun gotoHome() {
 
-        val intent = Intent(this,TabActivity::class.java)
+        val intent = Intent(this, TabActivity::class.java)
         startActivity(intent)
 
     }
